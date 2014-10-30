@@ -11,6 +11,7 @@ http://github.com/Nerian/bootstrap-datepicker-rails
 https://github.com/eternicode/bootstrap-datepicker
 
 ## Rails > 3.1
+
 Include bootstrap-datepicker-rails in Gemfile;
 
 ``` ruby
@@ -24,7 +25,7 @@ gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
                               :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 ```
 
-and run bundle install.
+and run `bundle install`.
 
 ## Configuration
 
@@ -50,9 +51,9 @@ You can fine tune the included files to suit your needs.
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.fr.js
 ```
 
-## Using bootstrap-datepicker-rails
+## Using bootstrap-datepicker-rails directly
 
-Just use the simple ```data-provide='datepicker'``` attribute.
+Just use the simple `data-provide='datepicker'` attribute.
 
 ```html
 <input type="text" data-provide='datepicker' >
@@ -75,6 +76,14 @@ Examples:
 http://eternicode.github.io/bootstrap-datepicker/
 
 There are a lot of options you can pass to datepicker(). They are documented at [https://github.com/eternicode/bootstrap-datepicker](https://github.com/eternicode/bootstrap-datepicker)
+
+## Using bootstrap-datepicker-rails with simple_form
+
+There is `simple_form` input which you can apply via `as: :datepicker` option.
+
+```erb
+<%= f.input :start_date, as: :datepicker %>
+```
 
 ## Questions? Bugs?
 
