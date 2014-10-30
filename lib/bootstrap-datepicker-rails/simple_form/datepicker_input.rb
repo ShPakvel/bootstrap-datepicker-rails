@@ -2,7 +2,7 @@ class DatepickerInput < SimpleForm::Inputs::StringInput
   def input
     idf = "#{lookup_model_names.join("_")}_#{reflection_or_attribute_name}"
     script = template.content_tag(:script, type: 'text/javascript') do
-      "$('input[id=#{idf}]').daterpicker();".html_safe
+      "$('input[id=#{idf}]').datepicker();".html_safe
     end
 
     super + script
